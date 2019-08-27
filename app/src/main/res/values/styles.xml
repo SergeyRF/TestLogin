@@ -3,9 +3,19 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/dark_sky_blue</item>
     </style>
+
+    <style name="TextInputStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textInputSize</item>
+        <item name="android:textColorPrimary">@color/greyish_brown</item>
+        <item name="android:textColorSecondary">@color/dark_sky_blue</item>
+        <item name="android:textColorHint">@color/brownish_grey</item>
+        <item name="colorControlNormal">@color/brownish_grey</item>
+        <item name="colorControlActivated">@color/dark_sky_blue</item>
+    </style>
+
 
 </resources>

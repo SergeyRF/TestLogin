@@ -1,4 +1,4 @@
-package com.retivov.testlogging
+package com.retivov.testregistry
 
 import org.junit.Test
 

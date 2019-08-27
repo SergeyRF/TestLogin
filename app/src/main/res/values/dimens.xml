@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="input_email_marginLR">32dp</dimen>
+
+    <dimen name="textInputSize">16sp</dimen>
 </resources>

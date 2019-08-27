@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">TestRegistry</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_email">Электронная почта</string>
+    <string name="sign_in">Войти</string>
 </resources>
