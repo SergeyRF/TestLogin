@@ -4,22 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.retivov.testregistry.RegistryActivity">
+    tools:context="com.retivov.testregistry.screens.RegistryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarRegistry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/greyish_brown" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/input_email_marginLR"
-        android:layout_marginTop="33dp"
-        android:layout_marginRight="@dimen/input_email_marginLR"
+        android:layout_marginLeft="@dimen/textInputMarginRL"
+        android:layout_marginTop="@dimen/textInputMarginTop"
+        android:layout_marginRight="@dimen/textInputMarginRL"
         android:theme="@style/TextInputStyle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/appBar">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_email"
@@ -31,9 +47,9 @@
         android:id="@+id/inputPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/input_email_marginLR"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="@dimen/input_email_marginLR"
+        android:layout_marginStart="@dimen/textInputMarginRL"
+        android:layout_marginTop="@dimen/textInputMarginBetween"
+        android:layout_marginEnd="@dimen/textInputMarginRL"
         android:theme="@style/TextInputStyle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -51,12 +67,13 @@
 
 
     <Button
+        android:id="@+id/btSignIn"
+        style="@style/ButtonLoginStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/input_email_marginLR"
-        android:layout_marginTop="23dp"
-        android:layout_marginRight="@dimen/input_email_marginLR"
-        android:background="@drawable/button_tangerine_radius2"
+        android:layout_marginLeft="@dimen/textInputMarginRL"
+        android:layout_marginTop="@dimen/buttonSignInMarginTop"
+        android:layout_marginRight="@dimen/textInputMarginRL"
         android:text="@string/sign_in"
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"

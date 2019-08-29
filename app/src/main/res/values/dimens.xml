@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="input_email_marginLR">32dp</dimen>
-
+    <dimen name="textInputMarginRL">32dp</dimen>
     <dimen name="textInputSize">16sp</dimen>
+    <dimen name="textInputMarginBetween">17dp</dimen>
+    <dimen name="textInputMarginTop">33dp</dimen>
+
+    <dimen name="buttonSignInMarginTop">23dp</dimen>
+
 </resources>

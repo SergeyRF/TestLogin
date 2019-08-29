@@ -4,10 +4,12 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="white">#ffffff</color>
+    <color name="very_white">#ffffff</color>
+    <color name="white">#f4f4f4</color>
     <color name="tangerine">#ff9b00</color>
     <color name="dark_sky_blue">#4e92df</color>
     <color name="brownish_grey">#6e6e6e</color>
     <color name="greyish_brown">#414141</color>
     <color name="greyish_brown_39">#63414141</color>
+    <color name="tangerine_pressed">#B46D00</color>
 </resources>

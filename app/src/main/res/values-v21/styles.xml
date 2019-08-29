@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="ButtonLoginStyle">
+        <item name="android:backgroundTint">@color/tangerine</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+</resources>

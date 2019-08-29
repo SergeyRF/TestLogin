@@ -3,4 +3,9 @@
     <string name="hint_password">Пароль</string>
     <string name="hint_email">Электронная почта</string>
     <string name="sign_in">Войти</string>
+    <string name="create">СОЗДАТЬ</string>
+    <string name="password_settings">Пароль - минимум 6 символов, должен обязательно содержать минимум 1 строчную букву, 1 заглавную, и 1 цифру</string>
+    <string name="email_invalid">Некорректный адрес</string>
+    <string name="login">Авторизация</string>
+    <string name="new_funtion">Новая функция\nНаходится в разработке</string>
 </resources>
