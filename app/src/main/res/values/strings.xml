@@ -8,4 +8,6 @@
     <string name="email_invalid">Некорректный адрес</string>
     <string name="login">Авторизация</string>
     <string name="new_funtion">Новая функция\nНаходится в разработке</string>
+    <string name="internet_error">Ошибка сети</string>
+    <string name="weather">Температура в Москве</string>
 </resources>

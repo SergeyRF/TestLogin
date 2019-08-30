@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/very_white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/dark_sky_blue</item>
+        <item name="actionMenuTextColor">@color/dark_sky_blue</item>
+        <item name="titleTextColor">@color/greyish_brown</item>
+        <item name="colorControlNormal">@color/dark_sky_blue</item>
+
+    </style>
+
+    <style name="TextInputStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textInputSize</item>
+        <item name="android:textColorPrimary">@color/greyish_brown</item>
+        <item name="android:textColorSecondary">@color/dark_sky_blue</item>
+        <item name="android:textColorHint">@color/brownish_grey</item>
+        <item name="colorControlNormal">@color/brownish_grey</item>
+        <item name="colorControlActivated">@color/dark_sky_blue</item>
+    </style>
 
     <style name="ButtonLoginStyle">
         <item name="android:backgroundTint">@color/tangerine</item>

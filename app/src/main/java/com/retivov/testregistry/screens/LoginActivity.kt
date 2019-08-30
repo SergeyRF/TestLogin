@@ -8,16 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.retivov.testregistry.R
 import com.retivov.testregistry.extensions.*
-import kotlinx.android.synthetic.main.activity_registry.*
+import kotlinx.android.synthetic.main.activity_login.*
 import org.koin.android.ext.android.inject
 
-class RegistryActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
-    private val viewModel: RegistryViewModel by inject()
+    private val viewModel: LoginViewModel by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registry)
+        setContentView(R.layout.activity_login)
 
         initToolbar()
         initViews()
@@ -27,15 +27,15 @@ class RegistryActivity : AppCompatActivity() {
     private fun initViews() {
 
         etPassword.onTouchRightDrawable {
-            viewModel.getPasswordHelp()
+            viewModel.onPasswordHelpClicked()
         }
 
         etPassword.onActionDone {
-            signIn()
+            login()
         }
 
         btSignIn.setOnClickListener {
-            signIn()
+            login()
         }
 
     }
@@ -44,15 +44,19 @@ class RegistryActivity : AppCompatActivity() {
         viewModel.weatherLiveData.observeSafe(this) { weather ->
             etPassword.hideKeyboard()
             etEmail.hideKeyboard()
-            Snackbar.make(btSignIn, weather, Snackbar.LENGTH_LONG).show()
+            Snackbar.make(root, "${getString(R.string.weather)} ${weather}C", Snackbar.LENGTH_LONG).show()
         }
 
         viewModel.toastLiveData.observeSafe(this) { text ->
             Toast.makeText(this, getString(text), Toast.LENGTH_LONG).show()
         }
+
+        viewModel.progressLiveData.observeSafe(this) {
+            progressLogin.setVisibility(it)
+        }
     }
 
-    private fun signIn() {
+    private fun login() {
         viewModel.signIn(etEmail.text.toString(), etPassword.text.toString())
     }
 
@@ -72,7 +76,7 @@ class RegistryActivity : AppCompatActivity() {
                 true
             }
             R.id.menu_reg_create -> {
-                viewModel.clickCreate()
+                viewModel.onCreateClicked()
                 true
             }
             else -> super.onOptionsItemSelected(item)

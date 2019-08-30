@@ -6,5 +6,6 @@
     <dimen name="textInputMarginTop">33dp</dimen>
 
     <dimen name="buttonSignInMarginTop">23dp</dimen>
+    <dimen name="btSignInTextSize">14sp</dimen>
 
 </resources>
