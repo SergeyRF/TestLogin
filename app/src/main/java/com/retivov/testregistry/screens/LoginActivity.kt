@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
         viewModel.weatherLiveData.observeSafe(this) { weather ->
             etPassword.hideKeyboard()
             etEmail.hideKeyboard()
-            Snackbar.make(root, "${getString(R.string.weather)} ${weather}C", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(root, getString(R.string.weather,weather), Snackbar.LENGTH_LONG).show()
         }
 
         viewModel.toastLiveData.observeSafe(this) { text ->
